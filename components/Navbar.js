@@ -57,7 +57,7 @@ function Navbar() {
                         mr: '7vw'
                     }}>
                         {pages.map((page) => (
-                            <Typography>
+                            <Typography key={page[0]}>
                                 <Link href={page[1]} className='nav-links'>
                                     {page[0]}
                                 </Link>
