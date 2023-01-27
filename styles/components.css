@@ -1,0 +1,51 @@
+.nav-links {
+    margin-left: 20px;
+    font-size: 14px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+}
+
+.nav-links:hover {
+    color: #DB164F;
+}
+
+.imp-text {
+    color: #DB164F;
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8.5vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero-box .text-btn h1 {
+    font-weight: 900;
+    font-size: 48px;
+    width: 45vw;
+}
+
+.hero-img {
+    object-fit: cover;
+    opacity: 1;
+    z-index: -1;
+}
+
+.main-btn {
+    background: #DB164F;
+    color: white;
+    border: none;
+    text-transform: unset;
+    font-weight: 500;
+    border-radius: 2.5px;
+    transition: 0.2s;
+}
+
+.main-btn:hover {
+    background: #ad103d;
+}

@@ -1,23 +1,14 @@
-import { Auth, ThemeSupa } from '@supabase/auth-ui-react'
-import { useSession, useSupabaseClient } from '@supabase/auth-helpers-react'
-import Account from '../components/Account'
+import Navbar from "../components/Navbar"
+import Hero from "../components/Hero"
+import Premieres from "../components/Premieres"
 
 const Home = () => {
-  const session = useSession()
-  const supabase = useSupabaseClient()
 
   return (
-    <div className="container" style={{ padding: '50px 0 100px 0' }}>
-      {!session ? (
-        <Auth 
-          providers={["github"]}
-          supabaseClient={supabase} 
-          appearance={{ theme: ThemeSupa }} 
-          theme="dark" 
-        />
-      ) : (
-        <Account session={session} />
-      )}
+    <div className="app">
+      <Navbar />
+      <Hero />
+      <Premieres />
     </div>
   )
 }
