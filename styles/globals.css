@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #100E19;
+    background: #100E19 !important;
     overflow-x: hidden;
 }
 
