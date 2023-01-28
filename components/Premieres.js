@@ -9,7 +9,7 @@ export default function Premieres({ movies }) {
             <h3>Премьеры</h3>
             <div className="card-list">
                 {movies.map(movie => {
-                    return <Card key={movie.id} id={movie.id} movie={movie.movie_name} poster={movie.poster} />
+                    return <Card key={movie.id} id={movie.id} movie={movie.name} poster={movie.poster} />
                 })}
             </div>
         </div>

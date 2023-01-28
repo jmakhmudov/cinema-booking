@@ -36,19 +36,19 @@ export async function getServerSideProps(context) {
     if(movie.data) {
 
         let response = await fetch(
-            `https://cloud-api.kinopoisk.dev/movie?field=name&search=${movie.data[0].movie_name}&token=5175VH0-NV44QDJ-H5S4PDF-D91VG2C`
+            `https://cloud-api.kinopoisk.dev/movie?field=id&search=${movie.data[0].movie_name}&token=5175VH0-NV44QDJ-H5S4PDF-D91VG2C`
         )
     
     
         await response.json().then((value) => {
-            //console.log(value.docs[0].name)
-            data.name = value.docs[0].name
-            data.description = value.docs[0].description
-            data.rating = value.docs[0].rating
-            data.alternativeName = value.docs[0].alternativeName
-            data.poster = value.docs[0].poster.url
-            data.movieLength = value.docs[0].movieLength
-            data.year = value.docs[0].year
+            //console.log(value.name)
+            data.name = value.name
+            data.description = value.description
+            data.rating = value.rating
+            data.alternativeName = value.alternativeName
+            data.poster = value.poster.url
+            data.movieLength = value.movieLength
+            data.year = value.year
         })
     
         return {
