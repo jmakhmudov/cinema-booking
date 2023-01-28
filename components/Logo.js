@@ -12,7 +12,7 @@ export default function Logo() {
                 textDecoration: 'none'
             }}
         >
-            <Link href="/admin">
+            <Link href="/">
                 <span className="imp-text">KINO</span>KASSA
             </Link>
         </Typography>

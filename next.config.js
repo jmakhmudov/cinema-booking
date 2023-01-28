@@ -6,6 +6,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ['avatars.mds.yandex.net']
+    domains: ['avatars.mds.yandex.net', 'www.kinopoisk.ru', 'st.kp.yandex.net']
   }
 }

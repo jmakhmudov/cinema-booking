@@ -1,14 +1,20 @@
 import Image from "next/image"
+import { useRouter } from "next/router"
 
-export default function Card() {
+export default function Card(props) {
+    
 
+    const router = useRouter()
+
+    function redirect() {
+        router.push(`/premieres/${props.id}`)
+    }
 
     return (
-        <div className="card-box">
-            <Image  src="https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/2e51cb8b-fd51-4166-84a2-63559733baac/orig" width="200" height="350" className="card-img"/>
+        <div className="card-box" onClick={redirect}>
+            <Image src={props.poster} width="200" height="350" className="card-img" />
             <div className="card-info">
-                <h4>Аватар: Путь воды</h4>
-                <p>12+ | 248мин. | США</p>
+                <h3>{props.movie}</h3>
             </div>
         </div>
     )

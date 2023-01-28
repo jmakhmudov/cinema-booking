@@ -1,17 +1,18 @@
 import Card from "./Card"
+import Link from "next/link"
 
-export default function Premieres() {
-
+export default function Premieres({ movies }) {
 
     return (
-        <div className="premieres-list">
+
+        <div className="movies-list">
             <h3>Премьеры</h3>
             <div className="card-list">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                {movies.map(movie => {
+                    return <Card key={movie.id} id={movie.id} movie={movie.movie_name} poster={movie.poster} />
+                })}
             </div>
         </div>
+
     )
 }
