@@ -29,7 +29,7 @@ export default function SessionMovie({ movieData, sessions, dates, rooms, cinema
 
                 <div className="sessions-list">
                     {sessions.map(session => {
-                        return <SessionCard session={session} cinemas={cinemas} rooms={rooms} />
+                        return <SessionCard session={session} cinemas={cinemas} rooms={rooms} key={session[0].id}/>
                     })}
                 </div>
 
