@@ -9,7 +9,7 @@ export default function SessionCard({session, cinemas, rooms }) {
                     {
                         cinemas.map(cinema => {
                             if(cinema.id==session[0].cinema_id) {
-                                return <h1>{cinema.cinema_name}</h1>
+                                return <h1 key={cinema.id+session.id}>{cinema.cinema_name}</h1>
                             }
                         })
                     }
@@ -17,7 +17,7 @@ export default function SessionCard({session, cinemas, rooms }) {
                         {
                             rooms.map(room => {
                                 if(room.id==session[0].room_id){
-                                    return <p>{room.name}</p>
+                                    return <p key={room.id}>{room.name}</p>
                                 }
                             })
                         }
