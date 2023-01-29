@@ -125,10 +125,18 @@
 }
 
 
-.movie-box,
-.movie-session-info {
+.movie-box {
     display: flex;
     justify-content: space-between;
+    padding: 0 8.5vw;
+    width: 100vw;
+    margin-top: 120px;
+}
+
+.movie-session-info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
     padding: 0 8.5vw;
     width: 100vw;
     margin-top: 120px;
@@ -183,4 +191,59 @@
 
 .session-movie div {
     margin-left: 20px;
+    width: 100%;
+}
+
+.dates-list {
+    margin-top: 40px;
+    display: flex;
+}
+
+.date-box {
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.date-box p {
+    font-size: 10px;
+    color: #89878F;
+}
+
+.session-card {
+    display: flex;
+    justify-content: space-between;
+    width: 83vw;
+    margin-top: 50px;
+}
+
+.session-card .session-room {
+    display: flex;
+}
+
+.session-room .movie-type {
+    margin-left: 10px;
+    color: #DB164F;
+    font-weight: 800;
+}
+
+.session-room {
+    margin-top: 20px;
+}
+
+.session-box hr {
+    display: block;
+    color: #89878F;
+    margin-top: 25px;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.right-section button {
+    margin-top: 20px;
 }

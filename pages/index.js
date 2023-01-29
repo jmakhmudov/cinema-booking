@@ -16,7 +16,6 @@ const Home = ({movies}) => {
       <Navbar />
       <Hero />
       <Premieres movies={movies}/>
-      <Soon />
       <Footer />
     </div>
   )
